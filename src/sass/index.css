@@ -234,15 +234,15 @@ body {
 
 .container {
   max-width: 100%;
-  min-width: 100%;
 }
 
-.section-locations__contact {
+.footer__div {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.section-locations__contact__title-1 {
+.footer__text__title-1 {
   color: #FFA5BA;
   font-family: Titan One;
   font-size: 30px;
@@ -255,7 +255,7 @@ body {
   margin-top: 121px;
 }
 
-.section-locations__contact__title-2 {
+.footer__text__title-2 {
   color: #D41443;
   font-family: Titan One;
   font-size: 58px;
@@ -267,18 +267,18 @@ body {
   margin-top: 0px;
 }
 
-.section-locations__contact__socialmedia-list {
+.footer__div__socialmedia-list {
   list-style: none;
   display: flex;
   justify-content: flex-end;
   margin-top: 121px;
 }
 
-.section-locations__contact__socialmedia-list__item {
+.footer__div__socialmedia-list__item {
   margin: 15px;
 }
 
-.section-locations__contact__socialmedia-tel {
+.footer__div__socialmedia-tel {
   text-decoration: none;
   color: #000;
   font-family: DM Sans;
@@ -289,7 +289,7 @@ body {
   letter-spacing: 0.32px;
 }
 
-.section-locations__contact__socialmedia-tel--color {
+.footer__div__socialmedia-tel--color {
   color: #D41443;
   font-family: DM Sans;
   font-size: 16px;
