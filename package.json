@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://sofira95.github.io/iceCream-team10",
+  "homepage": "https://sofira95.github.io/iceCream-Team10",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /iceCream-team10/"
+    "build": "parcel build src/*.html --public-url /iceCream-Team10/"
   },
   "repository": {
     "type": "git",
