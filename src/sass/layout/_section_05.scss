@@ -52,7 +52,7 @@
 }
 
 .section-locations__cards__local--2 {
-    width: 75.103px;
+    width: 150px;
     height: 28px;
     flex-shrink: 0;
     background-color: #C2E297;
@@ -108,6 +108,10 @@
     margin-left: 40px;
 }
 
+.section-locations__cards__svg{
+    margin-left: 40px;
+}
+
 .section-locations__cards__days {
     color: #000;
     font-family: "DM Sans", sans-serif;
@@ -131,6 +135,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 40px;
+    margin-top: 15px;
 }
 
 .section-locations__cards__contact-list {
