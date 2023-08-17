@@ -232,6 +232,10 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.section-locations__btn-list__svg {
+  margin-left: 10px;
+}
+
 .footer {
   max-width: 1600px;
   min-width: 1280px;
