@@ -1,26 +1,47 @@
 .section-locations{
-    max-width: 1600px;
-    min-width: 1280px;
+                   
+    min-width: 320px;
+
+    @media screen and (min-width: 768px){
+     min-width: 768px;
+    }
+    @media screen and (min-width: 1280px){
+     max-width: 1600px;
+     min-width: 1280px;
+    }
 }
 .container {
     max-width: 100%;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FFF5F6;;
+    background-color: #FFF5F6;
 
 }
 
 .section-locations__cards-list{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+        @media screen and (min-width: 768px) {
+           flex-direction: row;
+            justify-content: center;
+                align-items: center;
+            }
+        
+            @media screen and (min-width: 1280px) {
+           flex-direction: row;
+               
+            }
 }
 
 .section-locations__cards {
-    width: 368px;
-    height: 538px;
+ width: 280px;
+    height: 412px;
     flex-shrink: 0;
     border-radius: 24px;
     background: #FFF;
@@ -30,6 +51,17 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 16px;
+
+        @media screen and (min-width: 768px) {
+        width: 224px;
+            height: 528px;
+            }
+        
+            @media screen and (min-width: 1280px) {
+               
+            width: 368px;
+                height: 538px;
+            }
 
 }
 
@@ -90,44 +122,75 @@
 .section-locations__cards__city {
     color: #000;
     font-family: "DM Sans", sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 186%;
     letter-spacing: 0.04em;
     margin-left: 40px;
     margin-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+    
+            font-size: 16px;
+            line-height: 150%;
+            
+        }
 }
 
 .section-locations__cards__description {
     color: #907E82;
     font-family: "DM Sans", sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 183%;
+    line-height: 150%;
     letter-spacing: 0.04em;
     margin-left: 40px;
+
+    @media screen and (min-width: 768px) {
+      
+        font-size: 16px;
+        line-height: 183%;
+        }
+    
+        
 }
 
 .section-locations__cards__svg{
     margin-left: 40px;
+    width: 216px;
+        @media screen and (min-width: 768px) {
+        width: 288px;
+               
+            }
+                        
 }
 
 .section-locations__cards__days {
     color: #000;
     font-family: "DM Sans", sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 186%;
     letter-spacing: 0.04em;
     margin-left: 40px;
+    @media screen and (min-width: 768px) {
+    
+            font-size: 16px;
+            line-height: 183%;
+        }
 }
 
 .section-locations__cards__hours {
     color: #FFA5BA;
     font-family: "DM Sans", sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 186%;
+    @media screen and (min-width: 768px) {
+    
+            font-size: 16px;
+            line-height: 183%;
+        }
 
 }
 
@@ -142,9 +205,15 @@
     text-decoration: none;
     color: #907E82;
     font-family: "DM Sans", sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 183%;
+
+    @media screen and (min-width: 768px) {
+    
+            font-size: 16px;
+            line-height: 183%;
+        }
 }
 .section-locations__cards__contact-list:hover, .section-locations__cards__contact-list:focus {
     color: #D41342;
@@ -153,9 +222,17 @@
 
 .section-locations__btn-list{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 60px;
+
+        @media screen and (min-width: 768px) {
+        
+           flex-direction: row;
+            justify-content: center;
+                align-items: center;
+            }
 
     
   

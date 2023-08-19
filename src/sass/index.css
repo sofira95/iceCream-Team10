@@ -27,12 +27,23 @@ body {
 }
 
 .section-locations {
-  max-width: 1600px;
-  min-width: 1280px;
+  min-width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .section-locations {
+    min-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-locations {
+    max-width: 1600px;
+    min-width: 1280px;
+  }
 }
 
 .container {
   max-width: 100%;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,13 +53,26 @@ body {
 
 .section-locations__cards-list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .section-locations__cards-list {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-locations__cards-list {
+    flex-direction: row;
+  }
+}
 
 .section-locations__cards {
-  width: 368px;
-  height: 538px;
+  width: 280px;
+  height: 412px;
   flex-shrink: 0;
   border-radius: 24px;
   background: #FFF;
@@ -58,6 +82,18 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin: 16px;
+}
+@media screen and (min-width: 768px) {
+  .section-locations__cards {
+    width: 224px;
+    height: 528px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-locations__cards {
+    width: 368px;
+    height: 538px;
+  }
 }
 
 .section-locations__cards__local--1 {
@@ -117,44 +153,74 @@ body {
 .section-locations__cards__city {
   color: #000;
   font-family: "DM Sans", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 186%;
   letter-spacing: 0.04em;
   margin-left: 40px;
   margin-bottom: 0;
 }
+@media screen and (min-width: 768px) {
+  .section-locations__cards__city {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
 
 .section-locations__cards__description {
   color: #907E82;
   font-family: "DM Sans", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 183%;
+  line-height: 150%;
   letter-spacing: 0.04em;
   margin-left: 40px;
+}
+@media screen and (min-width: 768px) {
+  .section-locations__cards__description {
+    font-size: 16px;
+    line-height: 183%;
+  }
 }
 
 .section-locations__cards__svg {
   margin-left: 40px;
+  width: 216px;
+}
+@media screen and (min-width: 768px) {
+  .section-locations__cards__svg {
+    width: 288px;
+  }
 }
 
 .section-locations__cards__days {
   color: #000;
   font-family: "DM Sans", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 186%;
   letter-spacing: 0.04em;
   margin-left: 40px;
 }
+@media screen and (min-width: 768px) {
+  .section-locations__cards__days {
+    font-size: 16px;
+    line-height: 183%;
+  }
+}
 
 .section-locations__cards__hours {
   color: #FFA5BA;
   font-family: "DM Sans", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 186%;
+}
+@media screen and (min-width: 768px) {
+  .section-locations__cards__hours {
+    font-size: 16px;
+    line-height: 183%;
+  }
 }
 
 .section-locations__cards__contact {
@@ -168,9 +234,15 @@ body {
   text-decoration: none;
   color: #907E82;
   font-family: "DM Sans", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 183%;
+}
+@media screen and (min-width: 768px) {
+  .section-locations__cards__contact-list {
+    font-size: 16px;
+    line-height: 183%;
+  }
 }
 
 .section-locations__cards__contact-list:hover, .section-locations__cards__contact-list:focus {
@@ -180,9 +252,17 @@ body {
 
 .section-locations__btn-list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .section-locations__btn-list {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .section-locations__btn-list--btn-1 {
@@ -237,8 +317,18 @@ body {
 }
 
 .footer {
-  max-width: 1600px;
-  min-width: 1280px;
+  min-width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    min-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    max-width: 1600px;
+    min-width: 1280px;
+  }
 }
 
 .container {
@@ -247,33 +337,51 @@ body {
 
 .footer__div {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__div {
+    min-width: 768px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footer__text__title-1 {
   color: #FFA5BA;
   font-family: Titan One;
-  font-size: 30px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
   margin-bottom: 0px;
   margin-top: 121px;
+}
+@media screen and (min-width: 768px) {
+  .footer__text__title-1 {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+  }
 }
 
 .footer__text__title-2 {
   color: #D41443;
   font-family: Titan One;
-  font-size: 58px;
+  font-size: 44px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-top: 0px;
+}
+@media screen and (min-width: 768px) {
+  .footer__text__title-2 {
+    font-size: 58px;
+    letter-spacing: 0.06em;
+  }
 }
 
 .footer__div__socialmedia-list {
@@ -284,7 +392,12 @@ body {
 }
 
 .footer__div__socialmedia-list__item {
-  margin: 15px;
+  margin: 3.5px;
+}
+@media screen and (min-width: 768px) {
+  .footer__div__socialmedia-list__item {
+    margin: 15px;
+  }
 }
 
 .footer__div__socialmedia-list__itemsvg {
@@ -300,25 +413,46 @@ body {
   text-decoration: none;
   color: #000;
   font-family: DM Sans;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 186%;
   letter-spacing: 0.32px;
+}
+@media screen and (min-width: 768px) {
+  .footer__div__socialmedia-tel {
+    font-size: 16px;
+  }
 }
 
 .footer__div__socialmedia-tel--color {
   color: #D41443;
   font-family: DM Sans;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 186%;
   letter-spacing: 0.32px;
 }
+@media screen and (min-width: 768px) {
+  .footer__div__socialmedia-tel--color {
+    font-size: 16px;
+  }
+}
 
 .footer__svg {
   margin-top: 60px;
+  width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .footer__svg {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__svg {
+    width: 1280px;
+  }
 }
 
 .footer__end-text {
