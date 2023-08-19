@@ -10,17 +10,18 @@ body {
   padding-right: 15px;
   margin-left: 0;
   margin-right: 0;
-  max-width: 480px;
+  max-width: 768px;
   min-width: 320px;
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    min-width: 768px;
+    max-width: 1280px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1290px;
+    max-width: 1600px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -178,6 +179,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .section-locations__cards__description {
+    font-size: 14px;
+    line-height: 183%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-locations__cards__description {
     font-size: 16px;
     line-height: 183%;
   }
@@ -188,6 +195,11 @@ body {
   width: 216px;
 }
 @media screen and (min-width: 768px) {
+  .section-locations__cards__svg {
+    width: 160px;
+  }
+}
+@media screen and (min-width: 1280px) {
   .section-locations__cards__svg {
     width: 288px;
   }
@@ -204,6 +216,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .section-locations__cards__days {
+    font-size: 14px;
+    line-height: 183%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-locations__cards__days {
     font-size: 16px;
     line-height: 183%;
   }
@@ -217,6 +235,12 @@ body {
   line-height: 186%;
 }
 @media screen and (min-width: 768px) {
+  .section-locations__cards__hours {
+    font-size: 14px;
+    line-height: 183%;
+  }
+}
+@media screen and (min-width: 1280px) {
   .section-locations__cards__hours {
     font-size: 16px;
     line-height: 183%;
@@ -239,6 +263,12 @@ body {
   line-height: 183%;
 }
 @media screen and (min-width: 768px) {
+  .section-locations__cards__contact-list {
+    font-size: 14px;
+    line-height: 183%;
+  }
+}
+@media screen and (min-width: 1280px) {
   .section-locations__cards__contact-list {
     font-size: 16px;
     line-height: 183%;
@@ -346,6 +376,13 @@ body {
     justify-content: space-between;
   }
 }
+@media screen and (min-width: 1280px) {
+  .footer__div {
+    min-width: 768px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 .footer__text__title-1 {
   color: #FFA5BA;
@@ -361,6 +398,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer__text__title-1 {
+    font-size: 26px;
+    letter-spacing: 0.04em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__text__title-1 {
     font-size: 30px;
     letter-spacing: 0.04em;
   }
@@ -373,13 +416,19 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-top: 0px;
 }
 @media screen and (min-width: 768px) {
   .footer__text__title-2 {
     font-size: 58px;
+    letter-spacing: 0.04em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__text__title-2 {
+    font-size: 30px;
     letter-spacing: 0.06em;
   }
 }
@@ -421,6 +470,11 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer__div__socialmedia-tel {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__div__socialmedia-tel {
     font-size: 16px;
   }
 }
@@ -435,6 +489,11 @@ body {
   letter-spacing: 0.32px;
 }
 @media screen and (min-width: 768px) {
+  .footer__div__socialmedia-tel--color {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
   .footer__div__socialmedia-tel--color {
     font-size: 16px;
   }
