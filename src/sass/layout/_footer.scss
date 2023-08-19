@@ -1,0 +1,103 @@
+.footer{
+    max-width: 1600px;
+        min-width: 1280px;
+}
+
+.container{
+    max-width: 100%;
+   
+ 
+   
+}
+.footer__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+
+.footer__text__title-1 {
+    color: #FFA5BA;
+    font-family: Titan One;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: 121px;
+}
+
+.footer__text__title-2 {
+    color: #D41443;
+    font-family: Titan One;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.footer__div__socialmedia-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 121px;
+
+}
+
+.footer__div__socialmedia-list__item {
+    margin: 15px;
+}
+.footer__div__socialmedia-list__itemsvg {
+    cursor: pointer;
+}
+ .footer__div__socialmedia-list__itemsvg:hover,  .footer__div__socialmedia-list__itemsvg:focus{
+    fill: #D41443;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__div__socialmedia-tel {
+    text-decoration: none;
+    color: #000;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%;
+    letter-spacing: 0.32px;
+  
+}
+
+.footer__div__socialmedia-tel--color {
+    color: #D41443;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%;
+    letter-spacing: 0.32px;
+}
+.footer__svg{
+    margin-top: 60px;
+}
+
+.footer__end-text{
+    color: #907E82;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 186%;
+        letter-spacing: 0.28px;
+        cursor: pointer;
+       
+}
+.footer__end-text:hover, .footer__end-text:focus {
+    color: #D41443;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
