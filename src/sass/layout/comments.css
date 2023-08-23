@@ -1,0 +1,123 @@
+.comments {
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  max-width: 768px;
+}
+@media screen and (min-width: 768px) {
+  .comments {
+    min-width: 768px;
+    max-width: 1280px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments {
+    min-width: 1280px;
+    max-width: 1600px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
+}
+
+.comments__imgprofile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.comments__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.comments__box-svg {
+  margin-left: -170px;
+  margin-top: 52px;
+}
+@media screen and (min-width: 768px) {
+  .comments__box-svg {
+    margin-left: -650px;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__box-svg {
+    margin-left: -740px;
+    margin-top: 10px;
+  }
+}
+
+.comments__box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 280px;
+  height: 307px;
+  flex-shrink: 0;
+  background-color: #FAFAFA;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .comments__box-text {
+    width: 740px;
+    height: 138px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__box-text {
+    width: 968px;
+    height: 138px;
+    font-size: 16px;
+  }
+}
+
+.comments__text {
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  width: 157px;
+  height: 213px;
+  -webkit-text-decoration: underline solid #e1e1e1 3px;
+          text-decoration: underline solid #e1e1e1 3px;
+}
+@media screen and (min-width: 768px) {
+  .comments__text {
+    width: 710px;
+    height: 52px;
+    font-size: 16px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__text {
+    width: 750px;
+    height: 52px;
+  }
+}
+
+.comments__comands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
+}/*# sourceMappingURL=comments.css.map */
