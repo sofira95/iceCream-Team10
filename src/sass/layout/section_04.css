@@ -69,6 +69,7 @@
   background-color: #FAFAFA;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .comments__box-text {
@@ -98,6 +99,7 @@
   height: 213px;
   -webkit-text-decoration: underline solid #e1e1e1 3px;
           text-decoration: underline solid #e1e1e1 3px;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .comments__text {
@@ -120,4 +122,5 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 120px;
-}/*# sourceMappingURL=comments.css.map */
+  cursor: pointer;
+}/*# sourceMappingURL=section_04.css.map */

@@ -1,3 +1,13 @@
+$color-white: #fff;
+$color-pink: #FFA5BA;
+$color-background-s5: #fff5f6;
+$color-beige: #F0D1A5;
+$color-green: #C2E297;
+$color-pink2: #FFB8CA;
+$color-black: #000;
+$color-gray: #907E82;
+$color-red: #D41342;
+
 .footer{
     min-width: 320px;
     
@@ -37,7 +47,7 @@
 }
 
 .footer__text__title-1 {
-    color: #FFA5BA;
+    color: $color-pink;
     font-family: Titan One;
     font-size: 24px;
     font-style: normal;
@@ -47,6 +57,7 @@
     text-transform: uppercase;
     margin-bottom: 0px;
     margin-top: 121px;
+    cursor: pointer;
 
     @media screen and (min-width: 768px) {
             font-size: 26px;
@@ -59,7 +70,7 @@
 }
 
 .footer__text__title-2 {
-    color: #D41443;
+    color: $color-red;
     font-family: Titan One;
     font-size: 44px;
     font-style: normal;
@@ -68,6 +79,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin-top: 0px;
+    cursor: pointer;
 
     @media screen and (min-width: 768px) {
             font-size: 48px;
@@ -102,13 +114,13 @@
     cursor: pointer;
 }
  .footer__div__socialmedia-list__itemsvg:hover,  .footer__div__socialmedia-list__itemsvg:focus{
-    fill: #D41443;
+    fill: $color-red;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__div__socialmedia-tel {
     text-decoration: none;
-    color: #000;
+    color: $color-black;
     font-family: DM Sans;
     font-size: 12px;
     font-style: normal;
@@ -130,7 +142,7 @@
 }
 
 .footer__div__socialmedia-tel--color {
-    color: #D41443;
+    color: $color-red;
     font-family: DM Sans;
     font-size: 12px;
     font-style: normal;
@@ -161,7 +173,7 @@
 }
 
 .footer__end-text{
-    color: #907E82;
+    color: $color-gray;
         font-family: DM Sans;
         font-size: 14px;
         font-style: normal;
@@ -172,6 +184,6 @@
        
 }
 .footer__end-text:hover, .footer__end-text:focus {
-    color: #D41443;
+    color: $color-red;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
