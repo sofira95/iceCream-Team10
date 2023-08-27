@@ -1,0 +1,223 @@
+$color-grey-1: #907e82;
+$color-black-1: #000000;
+$color-red-1: #d41443;
+$color-white: #ffffff;
+$color-pink-3: #ffa5ba;
+$color-pink-2: #fff5f6;
+$color-pink-1: #ffb8ca;
+
+.section-3 {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 320px;
+  max-width: 767px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    max-width: 1279px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+    max-width: 1600px;
+  }
+}
+
+.tradition {
+  min-width: 320px;
+  max-width: 767px;
+  background: $color-pink-2;
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    max-width: 1279px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+    max-width: 1600px;
+  }
+}
+.tradition__caption {
+  font-family: titan one;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  vertical-align: Top;
+  text-align: center;
+  color: $color-pink-3;
+  margin: 0;
+  padding-top: 30px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: normal;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 34.35px;
+  }
+}
+
+.tradition__title {
+  font-family: titan one;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: normal;
+  vertical-align: Top;
+  letter-spacing: 0.06em;
+  text-align: center;
+  justify-content: center;
+  color: $color-red-1;
+  margin: 0;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: normal;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: normal;
+  }
+}
+
+.background {
+  background-image: url(../images/bg-aboute-desktop.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vaca {
+  height: 548px;
+  gap: 14%;
+  min-width:320px ;
+  max-width: 767px;
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    max-width: 1279px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+    max-width: 1600px;
+  }
+}
+
+.vaca__img {
+  padding-left: 45px;
+  
+  min-width: 320px;
+  max-width: 767px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 194%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 176%;
+  }
+}
+
+.vaca__texto {
+  width: 23%;
+  padding-top: 96px;
+  min-width: 320px;
+  max-width: 767px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 194%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 176%;
+  }
+}
+
+.vaca__parrafo {
+  font-family: DM sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: $color-black-1;
+}
+
+.vaca__parrafos {
+  font-family: DM sans;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 162%;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: $color-grey-1;
+}
+
+.vaca__button {
+  font-family: DM sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.83px;
+  align-content: center;
+  width: 176px;
+  height: 44px;
+  border-radius: 50px;
+  background: $color-white;
+  color: $color-red-1;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tradition__options {
+  display: flex;
+  gap: 176px;
+  min-width: 320px;
+  max-width: 767px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    max-width: 1279px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+    max-width: 1600px;
+  }
+}
+
+.tradition__option {
+  list-style: none;
+  width: 270px;
+  margin: 0 30px 0 0;
+}
+
+.tradition__svg {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.tradition__numeros {
+  font-family: Titan One;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 66px;
+  letter-spacing: 0.04em;
+  color: $color-red-1;
+}
+
+.tradition__texto-numero {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: right;
+  color: $color-black-1;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
