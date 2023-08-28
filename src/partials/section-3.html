@@ -6,7 +6,29 @@
     </div>
     <div class="vaca background">
       <div class="vaca__img">
-        <img src="./images/vaca.png" alt="" />
+        <ul class="">
+          <li class="vaca__item">
+            <picture>
+              <source
+                media="(min-whidth: 1280px)"
+                srcset="
+                              ./images/desktop/cow-about-desktop_1x.jpg
+                              ./images/desktop/cow-about-desktop@2xjpg/pic1@2x.jpg"
+              />
+              <source
+                media="(max-widht: 768px)"
+                srcset="
+                              ./images/mobile/cow-about_1x.jpg
+                              ./images/mobile/cow-about@2xjpg"
+              />
+              <source
+                media="(min-whidth:768 px)"
+                srcset="
+                              ./images/tablet/gallery-section/cow-about-tablet_1x.jpg  pic1_1x.jpg
+                              ./images/tablet/gallery-section/cow-about-tablet@2x.jpg"
+              />
+              <img src="./images/vaca.png" alt="#" />
+            </picture>
       </div>
       <div class="vaca__texto">
         <p class="vaca__parrafo">

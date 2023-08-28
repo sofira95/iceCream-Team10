@@ -88,47 +88,26 @@ $color-pink-1: #ffb8ca;
 .vaca {
   height: 548px;
   gap: 14%;
-  min-width:320px ;
-  max-width: 767px;
   @media screen and (min-width: 768px) {
-    min-width: 768px;
-    max-width: 1279px;
+    display: flex;
+    flex-direction: row;
   }
+
   @media screen and (min-width: 1280px) {
-    min-width: 1280px;
-    max-width: 1600px;
   }
 }
 
 .vaca__img {
   padding-left: 45px;
-  
-  min-width: 320px;
-  max-width: 767px;
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 194%;
-  }
-
-  @media screen and (min-width: 1280px) {
-    font-size: 16px;
-    line-height: 176%;
-  }
 }
 
 .vaca__texto {
   width: 23%;
   padding-top: 96px;
-  min-width: 320px;
-  max-width: 767px;
   @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 194%;
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
-    line-height: 176%;
   }
 }
 
@@ -140,6 +119,15 @@ $color-pink-1: #ffb8ca;
   letter-spacing: 0.04em;
   text-align: left;
   color: $color-black-1;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 174%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 176%;
+  }
 }
 
 .vaca__parrafos {
@@ -150,6 +138,15 @@ $color-pink-1: #ffb8ca;
   letter-spacing: 0.04em;
   text-align: left;
   color: $color-grey-1;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 194%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 196%;
+  }
 }
 
 .vaca__button {
@@ -173,17 +170,6 @@ $color-pink-1: #ffb8ca;
 .tradition__options {
   display: flex;
   gap: 176px;
-  min-width: 320px;
-  max-width: 767px;
-
-  @media screen and (min-width: 768px) {
-    min-width: 768px;
-    max-width: 1279px;
-  }
-  @media screen and (min-width: 1280px) {
-    min-width: 1280px;
-    max-width: 1600px;
-  }
 }
 
 .tradition__option {
@@ -221,3 +207,9 @@ $color-pink-1: #ffb8ca;
   letter-spacing: 0.02em;
   text-align: left;
 }
+
+.vaca__item {
+  list-style: none;
+}
+
+/*------------section----------4*/
