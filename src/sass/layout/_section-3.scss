@@ -94,8 +94,8 @@
 }
 
 .vaca__texto {
-  width: 23%;
-  padding-top: 96px;
+  width: 400px;
+  padding-top: 115px;
   @media screen and (min-width: 768px) {
   }
 
@@ -123,6 +123,7 @@
 }
 
 .vaca__parrafos {
+  margin-top: 32px;
   font-family: DM sans;
   font-size: 12px;
   font-weight: 500;
@@ -142,40 +143,25 @@
 }
 
 .vaca__button {
-  font-family: DM sans;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20.83px;
-  align-content: center;
-  width: 176px;
-  height: 44px;
-  border-radius: 50px;
-  background: $color-white;
-  color: $color-red-1;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+  margin-top: 40px;
 }
 
 .tradition__options {
+  padding: 0px 16px 179px 16px;
   display: flex;
   gap: 176px;
 }
 
 .tradition__option {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   width: 270px;
   margin: 0 30px 0 0;
 }
-
-.tradition__svg {
-  display: flex;
-  padding-bottom: 15px;
-}
-
 .tradition__numeros {
+  margin-top: 40px;
+  margin-bottom: 16px;
   font-family: Titan One;
   font-size: 58px;
   font-weight: 400;
