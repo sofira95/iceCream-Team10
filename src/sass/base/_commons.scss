@@ -1,0 +1,33 @@
+body {
+  font-family: $brandFont, sans-serif;
+  color: $textDark;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+.flex {
+  display: flex;
+}

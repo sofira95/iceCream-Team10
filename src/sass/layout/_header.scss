@@ -1,0 +1,55 @@
+.page-header {
+  height: 60px;
+  background-color: $pinkBase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 37px 10px 0;
+}
+.page-nav {
+  z-index: 2;
+}
+.nav {
+  display: flex;
+  gap: 35px;
+  font-size: 16px;
+  font-weight: 700;
+  z-index: 3;
+}
+.nav__link {
+  color: $textClear;
+  transition: color 0.3s;
+}
+.active {
+  color: $textActive;
+}
+.nav__link:hover {
+  color: #d41443;
+}
+.button {
+  border-radius: 22px;
+  width: 159px;
+  height: 44px;
+  font-family: $brandFont;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.button__icon {
+  margin: 3px 0px 0px 7px;
+  fill: #d41443;
+}
+.button__clear {
+  background-color: $textClear;
+  color: $textActive;
+  fill: #d41443;
+}
+
+.button__active {
+  background-color: $textActive;
+  color: $textClear;
+}
