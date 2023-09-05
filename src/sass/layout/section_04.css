@@ -62,6 +62,7 @@
   background-color: #fafafa;
   justify-content: center;
   align-items: center;
+  padding-bottom: 39px;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
@@ -107,6 +108,11 @@
     width: 750px;
     height: 52px;
   }
+}
+
+.comments__comands__text {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .comments__comands {
