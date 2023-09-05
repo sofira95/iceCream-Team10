@@ -1,0 +1,118 @@
+.banner {
+  background-color: $pinkBase;
+  height: 515px;
+  padding: 0px 20px 0px 20px;
+  padding-top: 60px;
+}
+
+.banner__right {
+  width: 557px;
+}
+.banner__tittle {
+  font-family: "Titan One";
+  letter-spacing: 1.52px;
+  text-transform: uppercase;
+}
+.banner__tittle-clear {
+  color: $textClear;
+  font-size: 38px;
+}
+.banner__tittle-color {
+  color: #d41443;
+  font-size: 58px;
+}
+.banner__buttons {
+  margin-top: 24px;
+  gap: 12px;
+  .button {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.3s;
+    fill: #d41443;
+  }
+  .button__active {
+    width: 107px;
+  }
+}
+.button:hover {
+  background-color: #d41443;
+  color: $textClear;
+  fill: $textClear;
+}
+.banner__slide {
+  margin-top: 40px;
+  align-items: flex-end;
+}
+.banner__slide__info {
+  width: 200px;
+  color: $textClear;
+  font-family: $brandFont;
+  font-size: 14px;
+  line-height: 19.6px;
+}
+.banner__button__slide {
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $textClear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #d41443;
+  cursor: pointer;
+}
+.banner__elispsis-ice {
+  width: 534px;
+  height: 534px;
+  border-radius: 534px;
+  background: #ffa5ba;
+}
+.banner__elispsis-ice {
+  position: absolute;
+  top: 60px;
+}
+.banner__img-ice {
+  position: absolute;
+  top: 54px;
+  left: 119px;
+}
+.banner__img-cliente {
+  position: absolute;
+  left: 363px;
+  top: 369px;
+}
+.banner__info-points {
+  position: absolute;
+  left: 575px;
+  top: 120px;
+  background-color: $pinkBase;
+  width: 92px;
+}
+.number-points {
+  color: #d41443;
+  text-align: right;
+  font-family: "Titan One";
+  font-size: 46px;
+  z-index: 3;
+}
+.text-info-points {
+  color: $textClear;
+  text-align: right;
+  font-family: $brandFont;
+  font-size: 14px;
+}
+.banner__elipsis__points {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $textClear;
+  position: absolute;
+}
+.elipsis-position {
+  left: 82px;
+}
+.points-food {
+  margin-top: 33px;
+}

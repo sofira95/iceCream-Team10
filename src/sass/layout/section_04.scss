@@ -1,127 +1,106 @@
-$color-white: #FFF;
-$color-pink: #FFA5BA;
-
-
-
-
 .comments {
-    align-items: center;
-    justify-content: center;
-    min-width: 320px;
-    max-width: 768px;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  max-width: 768px;
 
-    @media screen and (min-width: 768px) {
-        min-width: 768px;
-        max-width: 1280px;
-    }
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    max-width: 1280px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        min-width: 1280px;
-        max-width: 1600px;
-    }
-
-
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+    max-width: 1600px;
+  }
 }
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: $color-white;
-}
-.comments__imgprofile{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 32px;
+.comments__imgprofile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
 }
 .comments__box {
-    display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- margin-top: 32px;
- margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
-.comments__box-svg{
-    margin-left: -170px;
+.comments__box-svg {
+  margin-left: -170px;
 
-    margin-top: 52px;
-        @media screen and (min-width: 768px) {
-                margin-left: -650px;
-                margin-top: 10px;
-            }
-        
-            @media screen and (min-width: 1280px) {
-                margin-left: -740px;
-                    margin-top: 10px;
-            }
+  margin-top: 52px;
+  @media screen and (min-width: 768px) {
+    margin-left: -650px;
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: -740px;
+    margin-top: 10px;
+  }
 }
 
 .comments__box-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 280px;
-    height: 307px;
-    flex-shrink: 0;
-    background-color: #FAFAFA;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    
-   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 280px;
+  height: 307px;
+  flex-shrink: 0;
+  background-color: #fafafa;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 
-    @media screen and (min-width: 768px) {
-width: 740px;
+  @media screen and (min-width: 768px) {
+    width: 740px;
     height: 138px;
     font-size: 16px;
-    }
+  }
 
-    @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     width: 968px;
-        height: 138px;
-        font-size: 16px;
-    }
+    height: 138px;
+    font-size: 16px;
+  }
 }
 
 .comments__text {
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  width: 157px;
+  height: 213px;
+  text-decoration: underline solid #e1e1e1 3px;
+  cursor: pointer;
 
-    color: #000;
-    text-align: center;
-    font-family: DM Sans;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 186%;
-    letter-spacing: 0.04em;
-    width: 157px;
-        height: 213px;
-    text-decoration: underline solid  #e1e1e1 3px;
-    cursor: pointer;
-
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 710px;
-        height: 52px;
-        font-size: 16px;
-        font-size: 16px;
-    }
-
-    @media screen and (min-width: 1280px) {
-width: 750px;
     height: 52px;
-     
-    }
+    font-size: 16px;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 750px;
+    height: 52px;
+  }
 }
 
-.comments__comands{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 120px;
-    cursor: pointer;
+.comments__comands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
+  cursor: pointer;
 }
-
