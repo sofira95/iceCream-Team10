@@ -1,5 +1,5 @@
 body {
-    font-family: 'DM Sans';
+  font-family: 'DM Sans';
 }
 /*
 .container {
@@ -7,20 +7,22 @@ body {
     padding-right: 15px;
     margin-left: 0;
     margin-right: 0;
-    max-width: 480px;
+    max-width: 768px;
     min-width: 320px;
 
     @media screen and (min-width: 768px) {
-        max-width: 768px;
+        min-width: 768px;
+        max-width: 1279px;
     }
 
     @media screen and (min-width: 1280px) {
-        max-width: 1290px;
+        min-width: 1280px;
+        max-width: 1600px;
         padding-left: 16px;
         padding-right: 16px;
     }
 }*/
-.container{
-    width: 1280px;
-    margin: 0 auto;
+.container {
+  width: 1280px;
+  margin: 0 auto;
 }
