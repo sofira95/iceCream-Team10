@@ -6,6 +6,9 @@
   align-items: center;
   padding: 37px 10px 0;
 }
+.nav__button {
+  display: none;
+}
 .page-nav {
   z-index: 2;
 }
@@ -52,4 +55,40 @@
 .button__active {
   background-color: $textActive;
   color: $textClear;
+}
+.nav__button--responsive {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  /*.nav__button {
+    display: block;
+  }
+  .page-nav {
+    display: none;
+  }
+  .nav__button--buy {
+    display: none;
+  }*/
+  .nav__button--responsive {
+    display: block;
+  }
+  .page-header {
+    padding: 97px 10px 0;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #e17992;
+    gap: 0px;
+  }
+  .nav__item {
+    border-top: 1px solid #e18298;
+    border-bottom: 1px solid #e18298;
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
+  }
 }
