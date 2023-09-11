@@ -74,3 +74,38 @@
   position: absolute;
   top: 861px;
 }
+@media screen and (max-width: 480px) {
+  .products {
+    padding: 0px 16px 60px 16px;
+  }
+  .products__tittle {
+    font-size: 18px;
+  }
+  .products__tittle2 {
+    font-size: 34px;
+  }
+  .product {
+    width: 280px;
+    height: 489px;
+    margin-top: 148px;
+  }
+  .grid__produccts {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .product__image {
+    width: 280px;
+    height: 280px;
+  }
+  .product__image--1 {
+    top: 661px;
+  }
+  .product__image--2 {
+    top: 1300px;
+  }
+  .product__image--3 {
+    top: 1940px;
+  }
+}

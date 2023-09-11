@@ -9,7 +9,7 @@
   width: 557px;
 }
 .banner__tittle {
-  font-family: "Titan One";
+  font-family: 'Titan One';
   letter-spacing: 1.52px;
   text-transform: uppercase;
 }
@@ -93,7 +93,7 @@
 .number-points {
   color: #d41443;
   text-align: right;
-  font-family: "Titan One";
+  font-family: 'Titan One';
   font-size: 46px;
   z-index: 3;
 }
@@ -115,4 +115,38 @@
 }
 .points-food {
   margin-top: 33px;
+}
+@media screen and (max-width: 480px) {
+  .banner {
+    height: 410px;
+    padding: 0px 20px 0px 20px;
+    padding-top: 60px;
+  }
+  .banner__right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .banner__tittle-clear {
+    font-size: 26px;
+    white-space: normal;
+  }
+  .banner__tittle-color {
+    font-size: 48px;
+  }
+  .banner__elispsis-ice {
+    width: 346px;
+    height: 344px;
+    top: 100px;
+    left: 20px;
+  }
+  .banner__right {
+    z-index: 3;
+  }
+  .banner__img-ice {
+    width: 171px;
+    height: 410px;
+    top: 14px;
+    left: 80px;
+  }
 }
