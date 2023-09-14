@@ -3,7 +3,7 @@ $color-pink: #FFA5BA;
 $color-background-s5: #fff5f6;
 $color-beige: #F0D1A5;
 $color-green: #C2E297;
-$color-pink2: #FFB8CA;
+$color-pink2: #FFB8CA;  
 $color-black: #000;
 $color-gray: #907E82;
 $color-red: #D41342;
@@ -21,19 +21,19 @@ $color-red: #D41342;
         }
 }
 
-.container{
-    max-width: 100%;
-   
  
    
-}
+
 .footer__div {
     display: flex;
     flex-direction: column;
+   
+            background-color: $color-background-s5;
   
 
     @media screen and (min-width: 768px) {
             min-width: 768px;
+            display: flex;
                 flex-direction: row;
                     justify-content: space-between;
         }
@@ -90,7 +90,12 @@ $color-red: #D41342;
                             letter-spacing: 0.06em;
                         }
 }
-
+.footer__div__socialmedia{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
 .footer__div__socialmedia-list {
     list-style: none;
     display: flex;
@@ -158,32 +163,44 @@ $color-red: #D41342;
             font-size: 16px;
         }
 }
-.footer__svg{
+
+
+.footer__div__div{
+    background-color: $color-background-s5;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.footer__svg {
     margin-top: 60px;
     width: 320px;
 
-        @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         width: 768px;
-        }
+    }
 
-        @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
         width: 1280px;
-                
-        }
+
+    }
 }
 
-.footer__end-text{
+.footer__end-text {
     color: $color-gray;
-        font-family: DM Sans;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 186%;
-        letter-spacing: 0.28px;
-        cursor: pointer;
-       
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 186%;
+    letter-spacing: 0.28px;
+    cursor: pointer;
+
 }
-.footer__end-text:hover, .footer__end-text:focus {
+
+.footer__end-text:hover,
+.footer__end-text:focus {
     color: $color-red;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

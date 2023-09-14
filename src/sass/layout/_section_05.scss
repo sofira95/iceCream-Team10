@@ -11,7 +11,12 @@ $color-red: #D41342;
 .section-locations{
             min-width: 320px;
             max-width: 767px;
-    
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-background-s5;
+
             @media screen and (min-width: 768px) {
                 min-width: 768px;
                 max-width: 1279px;
@@ -24,22 +29,15 @@ $color-red: #D41342;
 
         }
 
-.container {
-    max-width: 100%;
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-background-s5;
 
-}
 
 .section-locations__cards-list{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+        z-index: 9999;
+            margin-top: -100px;
 
         @media screen and (min-width: 768px) {
            flex-direction: row;
