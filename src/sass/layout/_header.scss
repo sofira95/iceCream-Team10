@@ -73,13 +73,6 @@
   opacity: 1;
 }
 @media screen and (max-width: 480px) {
-  /*.nav__button--close {
-    display: block;
-  }
-  .page-nav {
-    display: none;
-  }
- */
   .page-header {
     height: 50px;
     padding: 8px 10px 0;
@@ -95,7 +88,7 @@
     padding-right: 0px;
   }
   .page-nav {
-    border: 1px solid red;
+    z-index: 4;
   }
   .nav__content--close {
     display: flex;
@@ -111,6 +104,71 @@
   }
   .nav__button--close {
     width: 14px;
+    height: 14px;
+  }
+  .nav__button--close {
+    width: 20px;
+    height: 14px;
+  }
+  .nav__button--responsive {
+    width: 186px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .nav {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    background-color: #e17992;
+    gap: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 254px;
+    padding-top: 20px;
+  }
+  .nav.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .nav__item {
+    border-top: 1px solid #e18298;
+    border-bottom: 1px solid #e18298;
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-nav {
+    z-index: 4;
+  }
+  .nav__content--close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .nav__button--icon {
+    display: block;
+    background: none; /* Elimina el fondo */
+    border: none; /* Elimina el borde */
+    padding: 0; /* Elimina el espacio interno */
+    cursor: pointer; /* Cambia el cursor a una mano */
+  }
+  .nav__button--close {
+    width: 14px;
+    height: 14px;
+  }
+  .nav__button--close {
+    width: 20px;
     height: 14px;
   }
   .nav__button--responsive {

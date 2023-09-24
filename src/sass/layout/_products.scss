@@ -109,3 +109,48 @@
     top: 1940px;
   }
 }
+@media screen and (max-width: 768px) {
+  .products {
+    padding: 0px 16px 60px 16px;
+  }
+  .products__tittle {
+    font-size: 18px;
+  }
+  .products__tittle2 {
+    font-size: 34px;
+  }
+  .product {
+    width: 224px;
+    height: 473px;
+    margin-top: 148px;
+  }
+  .grid__produccts {
+    gap: 16px;
+  }
+  .product__image {
+    width: 224px;
+    height: 224px;
+    top: 611px;
+  }
+  .banner__slide--leche {
+    width: 152px;
+    height: 154px;
+  }
+  .banner__buttons .button {
+    width: 82px;
+    height: 24px;
+    font-size: 8px;
+  }
+  .product__name {
+    margin-top: 130px;
+  }
+  .product__icon {
+    margin-top: 22px;
+  }
+  .product__description {
+    margin-top: 22px;
+  }
+  .product__button {
+    margin-top: 22px;
+  }
+}

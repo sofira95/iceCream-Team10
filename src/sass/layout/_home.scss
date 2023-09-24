@@ -150,3 +150,44 @@
     left: 80px;
   }
 }
+@media screen and (max-width: 768px) {
+  .banner__tittle-clear {
+    font-size: 22px;
+    white-space: normal;
+  }
+  .banner__tittle-color {
+    font-size: 34px;
+  }
+  .banner__right {
+    width: 400px;
+  }
+  .banner__elispsis-ice {
+    width: 335px;
+    height: 333px;
+    top: 100px;
+    left: 320px;
+  }
+  .banner__img-ice {
+    width: 143px;
+    height: 336px;
+    top: 14px;
+    left: 80px;
+  }
+  .banner__img-cliente {
+    position: absolute;
+    left: 240px;
+    top: 200px;
+    width: 190px;
+    height: 150px;
+  }
+  .banner__info-points {
+    position: absolute;
+    left: 330px;
+    top: 10px;
+  }
+  .banner {
+    height: 340px;
+    padding: 0px 20px 0px 20px;
+    padding-top: 20px;
+  }
+}

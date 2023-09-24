@@ -139,13 +139,6 @@ button {
 }
 
 @media screen and (max-width: 480px) {
-  /*.nav__button--close {
-     display: block;
-   }
-   .page-nav {
-     display: none;
-   }
-  */
   .page-header {
     height: 50px;
     padding: 8px 10px 0;
@@ -161,7 +154,7 @@ button {
     padding-right: 0px;
   }
   .page-nav {
-    border: 1px solid red;
+    z-index: 4;
   }
   .nav__content--close {
     display: flex;
@@ -177,6 +170,70 @@ button {
   }
   .nav__button--close {
     width: 14px;
+    height: 14px;
+  }
+  .nav__button--close {
+    width: 20px;
+    height: 14px;
+  }
+  .nav__button--responsive {
+    width: 186px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .nav {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    background-color: #e17992;
+    gap: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 254px;
+    padding-top: 20px;
+  }
+  .nav.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .nav__item {
+    border-top: 1px solid #e18298;
+    border-bottom: 1px solid #e18298;
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-nav {
+    z-index: 4;
+  }
+  .nav__content--close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .nav__button--icon {
+    display: block;
+    background: none; /* Elimina el fondo */
+    border: none; /* Elimina el borde */
+    padding: 0; /* Elimina el espacio interno */
+    cursor: pointer; /* Cambia el cursor a una mano */
+  }
+  .nav__button--close {
+    width: 14px;
+    height: 14px;
+  }
+  .nav__button--close {
+    width: 20px;
     height: 14px;
   }
   .nav__button--responsive {
@@ -386,6 +443,47 @@ button {
     left: 80px;
   }
 }
+@media screen and (max-width: 768px) {
+  .banner__tittle-clear {
+    font-size: 22px;
+    white-space: normal;
+  }
+  .banner__tittle-color {
+    font-size: 34px;
+  }
+  .banner__right {
+    width: 400px;
+  }
+  .banner__elispsis-ice {
+    width: 335px;
+    height: 333px;
+    top: 100px;
+    left: 320px;
+  }
+  .banner__img-ice {
+    width: 143px;
+    height: 336px;
+    top: 14px;
+    left: 80px;
+  }
+  .banner__img-cliente {
+    position: absolute;
+    left: 240px;
+    top: 200px;
+    width: 190px;
+    height: 150px;
+  }
+  .banner__info-points {
+    position: absolute;
+    left: 330px;
+    top: 10px;
+  }
+  .banner {
+    height: 340px;
+    padding: 0px 20px 0px 20px;
+    padding-top: 20px;
+  }
+}
 .grid__produccts {
   justify-content: space-between;
   gap: 32px;
@@ -507,6 +605,51 @@ button {
   }
   .product__image--3 {
     top: 1940px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .products {
+    padding: 0px 16px 60px 16px;
+  }
+  .products__tittle {
+    font-size: 18px;
+  }
+  .products__tittle2 {
+    font-size: 34px;
+  }
+  .product {
+    width: 224px;
+    height: 473px;
+    margin-top: 148px;
+  }
+  .grid__produccts {
+    gap: 16px;
+  }
+  .product__image {
+    width: 224px;
+    height: 224px;
+    top: 611px;
+  }
+  .banner__slide--leche {
+    width: 152px;
+    height: 154px;
+  }
+  .banner__buttons .button {
+    width: 82px;
+    height: 24px;
+    font-size: 8px;
+  }
+  .product__name {
+    margin-top: 130px;
+  }
+  .product__icon {
+    margin-top: 22px;
+  }
+  .product__description {
+    margin-top: 22px;
+  }
+  .product__button {
+    margin-top: 22px;
   }
 }
 .section-3 {
