@@ -1,13 +1,22 @@
+$color-grey-1: #907e82;
+$color-black-1: #000000;
+$color-red-1: #d41443;
+$color-white: #ffffff;
+$color-pink-3: #ffa5ba;
+$color-pink-2: #fff5f6;
+$color-pink-1: #ffb8ca;
+
 .section-3 {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   min-width: 320px;
-  max-width: 767px;
+  max-width: 768px;
 
   @media screen and (min-width: 768px) {
     min-width: 768px;
     max-width: 1279px;
   }
+
   @media screen and (min-width: 1280px) {
     min-width: 1280px;
     max-width: 1600px;
@@ -15,18 +24,11 @@
 }
 
 .tradition {
-  min-width: 320px;
-  max-width: 767px;
+
   background: $color-pink-2;
-  @media screen and (min-width: 768px) {
-    min-width: 768px;
-    max-width: 1279px;
-  }
-  @media screen and (min-width: 1280px) {
-    min-width: 1280px;
-    max-width: 1600px;
-  }
+
 }
+
 .tradition__caption {
   font-family: titan one;
   font-size: 18px;
@@ -37,6 +39,8 @@
   color: $color-pink-3;
   margin: 0;
   padding-top: 30px;
+  cursor: pointer;
+
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: normal;
@@ -59,6 +63,8 @@
   justify-content: center;
   color: $color-red-1;
   margin: 0;
+  cursor: pointer;
+
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: normal;
@@ -70,36 +76,52 @@
   }
 }
 
-.background {
-  background-image: url(../images/bg-aboute-desktop.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
 
 .vaca {
-  height: 548px;
-  gap: 14%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   @media screen and (min-width: 768px) {
-    display: flex;
     flex-direction: row;
   }
 
-  @media screen and (min-width: 1280px) {
-  }
 }
 
-.vaca__img {
-  padding-left: 45px;
+.vaca__imagen {
+  width: 280px;
+  height: 279px;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 335px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 501px;
+    height: 501px;
+  }
 }
 
 .vaca__texto {
-  width: 400px;
-  padding-top: 115px;
+  width: 220px;
+  margin-top: 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   @media screen and (min-width: 768px) {
+    width: 334px;
+    margin-left: 90px;
   }
 
   @media screen and (min-width: 1280px) {
+    width: 400px;
+    margin-left: 90px;
   }
 }
 
@@ -111,6 +133,7 @@
   letter-spacing: 0.04em;
   text-align: left;
   color: $color-black-1;
+
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 174%;
@@ -122,46 +145,63 @@
   }
 }
 
-.vaca__parrafos {
-  margin-top: 32px;
-  font-family: DM sans;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 162%;
-  letter-spacing: 0.04em;
-  text-align: left;
-  color: $color-grey-1;
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 194%;
-  }
-
-  @media screen and (min-width: 1280px) {
-    font-size: 14px;
-    line-height: 196%;
-  }
-}
 
 .vaca__button {
-  margin-top: 40px;
+  font-family: DM sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.83px;
+  align-content: center;
+  width: 176px;
+  height: 44px;
+  border-radius: 50px;
+  background: $color-white;
+  color: $color-red-1;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.vaca__button:hover,
+.vaca__button:focus {
+  background-color: $color-red-1 ;
+  color: $color-white;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tradition__options {
-  padding: 0px 16px 179px 16px;
   display: flex;
-  gap: 176px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  @media screen and (min-width: 1280px) {
+    justify-content: space-around;
+    flex-direction: row;
+  }
 }
 
 .tradition__option {
-  display: flex;
-  flex-direction: column;
   list-style: none;
   width: 270px;
-  margin: 0 30px 0 0;
+  margin: 15px;
+
 }
+
+.tradition__svg {
+  display: flex;
+  padding-bottom: 15px;
+}
+
 .tradition__numeros {
-  margin-top: 40px;
-  margin-bottom: 16px;
   font-family: Titan One;
   font-size: 58px;
   font-weight: 400;
@@ -190,4 +230,3 @@
   list-style: none;
 }
 
-/*------------section----------4*/

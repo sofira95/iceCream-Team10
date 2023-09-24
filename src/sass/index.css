@@ -331,9 +331,9 @@ button {
 
 .section-3 {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   min-width: 320px;
-  max-width: 767px;
+  max-width: 768px;
 }
 @media screen and (min-width: 768px) {
   .section-3 {
@@ -349,21 +349,7 @@ button {
 }
 
 .tradition {
-  min-width: 320px;
-  max-width: 767px;
   background: #fff5f6;
-}
-@media screen and (min-width: 768px) {
-  .tradition {
-    min-width: 768px;
-    max-width: 1279px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .tradition {
-    min-width: 1280px;
-    max-width: 1600px;
-  }
 }
 
 .tradition__caption {
@@ -376,6 +362,7 @@ button {
   color: #ffa5ba;
   margin: 0;
   padding-top: 30px;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .tradition__caption {
@@ -401,6 +388,7 @@ button {
   justify-content: center;
   color: #d41443;
   margin: 0;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .tradition__title {
@@ -415,31 +403,56 @@ button {
   }
 }
 
-.background {
-  background-image: url(../images/bg-aboute-desktop.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .vaca {
-  height: 548px;
-  gap: 14%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .vaca {
-    display: flex;
     flex-direction: row;
   }
 }
-.vaca__img {
-  padding-left: 45px;
+
+.vaca__imagen {
+  width: 280px;
+  height: 279px;
+}
+@media screen and (min-width: 768px) {
+  .vaca__imagen {
+    width: 336px;
+    height: 335px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .vaca__imagen {
+    width: 501px;
+    height: 501px;
+  }
 }
 
 .vaca__texto {
-  width: 400px;
-  padding-top: 115px;
+  width: 220px;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .vaca__texto {
+    width: 334px;
+    margin-left: 90px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .vaca__texto {
+    width: 400px;
+    margin-left: 90px;
+  }
+}
+
 .vaca__parrafo {
   font-family: DM sans;
   font-weight: 500;
@@ -462,50 +475,63 @@ button {
   }
 }
 
-.vaca__parrafos {
-  margin-top: 32px;
+.vaca__button {
   font-family: DM sans;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 162%;
-  letter-spacing: 0.04em;
-  text-align: left;
-  color: #907e82;
-}
-@media screen and (min-width: 768px) {
-  .vaca__parrafos {
-    font-size: 14px;
-    line-height: 194%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .vaca__parrafos {
-    font-size: 14px;
-    line-height: 196%;
-  }
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.83px;
+  align-content: center;
+  width: 176px;
+  height: 44px;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #d41443;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
 }
 
-.vaca__button {
-  margin-top: 40px;
+.vaca__button:hover,
+.vaca__button:focus {
+  background-color: #d41443;
+  color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tradition__options {
-  padding: 0px 16px 179px 16px;
   display: flex;
-  gap: 176px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .tradition__options {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .tradition__options {
+    justify-content: space-around;
+    flex-direction: row;
+  }
 }
 
 .tradition__option {
-  display: flex;
-  flex-direction: column;
   list-style: none;
   width: 270px;
-  margin: 0 30px 0 0;
+  margin: 15px;
+}
+
+.tradition__svg {
+  display: flex;
+  padding-bottom: 15px;
 }
 
 .tradition__numeros {
-  margin-top: 40px;
-  margin-bottom: 16px;
   font-family: Titan One;
   font-size: 58px;
   font-weight: 400;
@@ -534,13 +560,12 @@ button {
   list-style: none;
 }
 
-/*------------section----------4*/
 .section-gallery {
-  position: absolute;
-  top: 2700px;
-  left: 255px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   min-width: 320px;
   max-width: 767px;
 }
@@ -559,24 +584,15 @@ button {
 
 .photo-gallery__menu {
   display: grid;
-  height: 500px;
+  margin-top: 114px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 4px;
   padding: 5px;
-  min-width: 320px;
-  max-width: 767px;
 }
 @media screen and (min-width: 768px) {
   .photo-gallery__menu {
-    min-width: 768px;
-    max-width: 1279px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .photo-gallery__menu {
-    min-width: 1280px;
-    max-width: 1600px;
+    gap: 10px;
   }
 }
 
@@ -669,11 +685,15 @@ button {
 }
 
 .comments {
-  margin-top: 406px;
   align-items: center;
   justify-content: center;
   min-width: 320px;
   max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
 }
 @media screen and (min-width: 768px) {
   .comments {
@@ -729,10 +749,9 @@ button {
   width: 280px;
   height: 307px;
   flex-shrink: 0;
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   justify-content: center;
   align-items: center;
-  padding-bottom: 39px;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
@@ -780,29 +799,23 @@ button {
   }
 }
 
-.comments__comands__text {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
 .comments__comands {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 120px;
+  margin-bottom: 180px;
   cursor: pointer;
 }
 
 .section-locations {
-  background-color: #fff5f6;
-  height: 600px;
   min-width: 320px;
   max-width: 767px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  margin-top: 120px;
+  align-items: center;
+  background-color: #fff5f6;
 }
 @media screen and (min-width: 768px) {
   .section-locations {
@@ -818,13 +831,12 @@ button {
 }
 
 .section-locations__cards-list {
-  position: absolute;
-  top: 3650px;
-  left: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
+  margin-top: -100px;
 }
 @media screen and (min-width: 768px) {
   .section-locations__cards-list {
@@ -844,7 +856,7 @@ button {
   height: 412px;
   flex-shrink: 0;
   border-radius: 24px;
-  background: #ffffff;
+  background: #fff;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   cursor: pointer;
   display: flex;
@@ -869,9 +881,9 @@ button {
   width: 75.103px;
   height: 28px;
   flex-shrink: 0;
-  background-color: #f0d1a5;
+  background-color: #F0D1A5;
   border-radius: 10px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
@@ -880,7 +892,6 @@ button {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-top: 40px;
-  margin-bottom: 32px;
   margin-left: 40px;
 }
 @media screen and (max-width: 768px) {
@@ -893,9 +904,9 @@ button {
   width: 150px;
   height: 28px;
   flex-shrink: 0;
-  background-color: #c2e297;
+  background-color: #C2E297;
   border-radius: 10px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
@@ -905,7 +916,6 @@ button {
   text-transform: uppercase;
   margin-top: 40px;
   margin-left: 40px;
-  margin-bottom: 32px;
 }
 @media screen and (max-width: 768px) {
   .section-locations__cards__local--2 {
@@ -917,9 +927,9 @@ button {
   width: 75.103px;
   height: 28px;
   flex-shrink: 0;
-  background-color: #ffb8ca;
+  background-color: #FFB8CA;
   border-radius: 10px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
@@ -929,7 +939,6 @@ button {
   text-transform: uppercase;
   margin-top: 40px;
   margin-left: 40px;
-  margin-bottom: 32px;
 }
 @media screen and (max-width: 768px) {
   .section-locations__cards__local--3 {
@@ -955,7 +964,7 @@ button {
 }
 
 .section-locations__cards__description {
-  color: #907e82;
+  color: #907E82;
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -1014,7 +1023,7 @@ button {
 }
 
 .section-locations__cards__hours {
-  color: #ffa5ba;
+  color: #FFA5BA;
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -1042,7 +1051,7 @@ button {
 
 .section-locations__cards__contact-list {
   text-decoration: none;
-  color: #907e82;
+  color: #907E82;
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -1063,7 +1072,7 @@ button {
 
 .section-locations__cards__contact-list:hover,
 .section-locations__cards__contact-list:focus {
-  color: #d41342;
+  color: #D41342;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1086,9 +1095,9 @@ button {
   width: 198px;
   height: 44px;
   border-radius: 22px;
-  background-color: #d41342;
+  background-color: #D41342;
   border: none;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font-family: DM Sans;
   font-size: 16px;
@@ -1101,8 +1110,8 @@ button {
 
 .section-locations__btn-list--btn-1:hover,
 .section-locations__btn-list--btn-1:focus {
-  background-color: #ffffff;
-  color: #d41342;
+  background-color: #fff;
+  color: #D41342;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1110,9 +1119,9 @@ button {
   width: 168px;
   height: 44px;
   border-radius: 22px;
-  background: #ffffff;
+  background: #fff;
   border: none;
-  color: #d41342;
+  color: #D41342;
   text-align: center;
   font-family: DM Sans;
   font-size: 16px;
@@ -1125,8 +1134,8 @@ button {
 
 .section-locations__btn-list--btn-2:hover,
 .section-locations__btn-list--btn-2:focus {
-  background-color: #d41342;
-  color: #ffffff;
+  background-color: #D41342;
+  color: #fff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1149,18 +1158,15 @@ button {
   }
 }
 
-.footer__page {
-  background-color: #fff5f6;
-  padding: 0px 16px 60px 16px;
-}
-
 .footer__div {
   display: flex;
   flex-direction: column;
+  background-color: #fff5f6;
 }
 @media screen and (min-width: 768px) {
   .footer__div {
     min-width: 768px;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -1174,7 +1180,7 @@ button {
 }
 
 .footer__text__title-1 {
-  color: #ffa5ba;
+  color: #FFA5BA;
   font-family: Titan One;
   font-size: 24px;
   font-style: normal;
@@ -1200,7 +1206,7 @@ button {
 }
 
 .footer__text__title-2 {
-  color: #d41342;
+  color: #D41342;
   font-family: Titan One;
   font-size: 44px;
   font-style: normal;
@@ -1222,6 +1228,12 @@ button {
     font-size: 58px;
     letter-spacing: 0.06em;
   }
+}
+
+.footer__div__socialmedia {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .footer__div__socialmedia-list {
@@ -1251,7 +1263,7 @@ button {
 
 .footer__div__socialmedia-list__itemsvg:hover,
 .footer__div__socialmedia-list__itemsvg:focus {
-  fill: #d41342;
+  fill: #D41342;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1277,7 +1289,7 @@ button {
 }
 
 .footer__div__socialmedia-tel--color {
-  color: #d41342;
+  color: #D41342;
   font-family: DM Sans;
   font-size: 12px;
   font-style: normal;
@@ -1296,6 +1308,14 @@ button {
   }
 }
 
+.footer__div__div {
+  background-color: #fff5f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer__svg {
   margin-top: 60px;
   width: 320px;
@@ -1311,29 +1331,8 @@ button {
   }
 }
 
-.footer__copy {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  padding-top: 60px;
-}
-
-.footer__copy__line {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: row;
-  width: 1167px;
-  height: 1px;
-  border-top: 1px solid #e1e1e1;
-  padding-top: 7px;
-}
-
 .footer__end-text {
-  color: #907e82;
+  color: #907E82;
   font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
@@ -1345,6 +1344,6 @@ button {
 
 .footer__end-text:hover,
 .footer__end-text:focus {
-  color: #d41342;
+  color: #D41342;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }/*# sourceMappingURL=index.css.map */

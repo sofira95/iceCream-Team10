@@ -1,9 +1,13 @@
 .comments {
-  margin-top: 406px;
   align-items: center;
   justify-content: center;
   min-width: 320px;
   max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
 }
 @media screen and (min-width: 768px) {
   .comments {
@@ -59,10 +63,9 @@
   width: 280px;
   height: 307px;
   flex-shrink: 0;
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   justify-content: center;
   align-items: center;
-  padding-bottom: 39px;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
@@ -110,16 +113,11 @@
   }
 }
 
-.comments__comands__text {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
 .comments__comands {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 120px;
+  margin-bottom: 180px;
   cursor: pointer;
 }/*# sourceMappingURL=section_04.css.map */

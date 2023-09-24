@@ -1,9 +1,19 @@
+$color-white: #FFF;
+$color-pink: #FFA5BA;
+
+
+
+
 .comments {
-  margin-top: 406px;
   align-items: center;
   justify-content: center;
   min-width: 320px;
   max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-white;
 
   @media screen and (min-width: 768px) {
     min-width: 768px;
@@ -14,7 +24,12 @@
     min-width: 1280px;
     max-width: 1600px;
   }
+
+
 }
+
+
+
 .comments__imgprofile {
   display: flex;
   flex-direction: column;
@@ -22,6 +37,7 @@
   align-items: center;
   margin-top: 32px;
 }
+
 .comments__box {
   display: flex;
   flex-direction: column;
@@ -30,10 +46,12 @@
   margin-top: 32px;
   margin-bottom: 32px;
 }
+
 .comments__box-svg {
   margin-left: -170px;
 
   margin-top: 52px;
+
   @media screen and (min-width: 768px) {
     margin-left: -650px;
     margin-top: 10px;
@@ -52,11 +70,12 @@
   width: 280px;
   height: 307px;
   flex-shrink: 0;
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   justify-content: center;
   align-items: center;
-  padding-bottom: 39px;
   cursor: pointer;
+
+
 
   @media screen and (min-width: 768px) {
     width: 740px;
@@ -72,6 +91,7 @@
 }
 
 .comments__text {
+
   color: #000;
   text-align: center;
   font-family: DM Sans;
@@ -95,17 +115,16 @@
   @media screen and (min-width: 1280px) {
     width: 750px;
     height: 52px;
+
   }
 }
-.comments__comands__text {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
+
 .comments__comands {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 120px;
+  margin-bottom: 180px;
   cursor: pointer;
+
 }
