@@ -1,6 +1,9 @@
 .section-gallery {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   min-width: 320px;
   max-width: 767px;
 
@@ -16,22 +19,16 @@
 
 .photo-gallery__menu {
     display: grid;
-    height: 500px;
+  
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 4px;
     padding: 5px;
-    min-width: 320px;
-    max-width: 767px;
+  @media screen and (min-width: 768px) {
+    gap: 10px;
+    }
 
-    @media screen and (min-width: 768px) {
-      min-width: 768px;
-      max-width: 1279px;
-    }
-    @media screen and (min-width: 1280px) {
-      min-width: 1280px;
-      max-width: 1600px;
-    }
+
   }
   
   .photo-gallery__item {

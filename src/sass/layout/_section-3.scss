@@ -1,0 +1,223 @@
+$color-grey-1: #907e82;
+$color-black-1: #000000;
+$color-red-1: #d41443;
+$color-white: #ffffff;
+$color-pink-3: #ffa5ba;
+$color-pink-2: #fff5f6;
+$color-pink-1: #ffb8ca;
+
+.section-3 {
+  display: flex;
+ flex-direction: column;
+  min-width: 320px;
+  max-width: 768px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    max-width: 1279px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+    max-width: 1600px;
+  }
+}
+
+.tradition {
+
+  background: $color-pink-2;
+
+}
+.tradition__caption {
+  font-family: titan one;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  vertical-align: Top;
+  text-align: center;
+  color: $color-pink-3;
+  margin: 0;
+  padding-top: 30px;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: normal;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 34.35px;
+  }
+}
+
+.tradition__title {
+  font-family: titan one;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: normal;
+  vertical-align: Top;
+  letter-spacing: 0.06em;
+  text-align: center;
+  justify-content: center;
+  color: $color-red-1;
+  margin: 0;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: normal;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: normal;
+  }
+}
+
+
+
+.vaca {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+}
+
+.vaca__imagen{
+  width: 280px;
+    height: 279px;
+    @media screen and (min-width: 768px) {
+      width: 336px;
+        height: 335px;
+    }
+    
+      @media screen and (min-width: 1280px) {
+        width: 501px;
+          height: 501px;
+      }
+}
+
+.vaca__texto {
+  width: 220px;
+  margin-top: 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 334px; 
+      margin-left: 90px;
+  }
+  
+    @media screen and (min-width: 1280px) {
+      width: 400px;
+            margin-left: 90px;
+    }
+}
+
+.vaca__parrafo {
+  font-family: DM sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: $color-black-1;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 174%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 176%;
+  }
+}
+
+
+.vaca__button {
+  font-family: DM sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.83px;
+  align-content: center;
+  width: 176px;
+  height: 44px;
+  border-radius: 50px;
+  background: $color-white;
+  color: $color-red-1;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+}
+.vaca__button:hover, .vaca__button:focus{
+  background-color: $color-red-1 ;
+  color: $color-white;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tradition__options {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+  @media screen and (min-width: 768px) {
+   flex-direction: row;
+   justify-content: flex-start;
+    }
+  
+    @media screen and (min-width: 1280px) {
+   justify-content: space-around;
+   flex-direction: row;
+    }
+}
+
+.tradition__option {
+  list-style: none;
+  width: 270px;
+ 
+}
+
+.tradition__svg {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.tradition__numeros {
+  font-family: Titan One;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 66px;
+  letter-spacing: 0.04em;
+  color: $color-red-1;
+}
+
+.tradition__texto-numero {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: right;
+  color: $color-black-1;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.vaca__item {
+  list-style: none;
+}
+
+/*------------section----------4*/
