@@ -21,7 +21,9 @@
 .section-locations__cards-list {
   position: absolute;
   top: 3650px;
-  left: 350px;
+  /*left: 350px;*/
+  left: 50%; /* Coloca el elemento a la mitad del contenedor */
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   justify-content: center;

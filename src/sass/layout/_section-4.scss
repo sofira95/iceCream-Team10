@@ -1,7 +1,9 @@
 .section-gallery {
   position: absolute;
   top: 2700px;
-  left: 255px;
+  /*left: 255px;*/
+  left: 50%; /* Coloca el elemento a la mitad del contenedor */
+  transform: translateX(-50%);
   display: flex;
   flex-wrap: wrap;
   min-width: 320px;
